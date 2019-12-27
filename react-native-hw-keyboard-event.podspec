@@ -5,7 +5,7 @@ require 'json'
 package = JSON.parse(File.read(File.join(__dir__, 'package.json')))
 
 Pod::Spec.new do |s|
-  s.name         = 'react-native-hw-keybard-event'
+  s.name         = 'react-native-hw-keyboard-event'
   s.version      = package['version']
   s.summary      = 'Event handler for hardware keyboard keystrokes'
   s.author       = 'Emilio Rodriguez'
