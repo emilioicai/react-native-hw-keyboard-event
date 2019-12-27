@@ -90,9 +90,11 @@ RNHWKeyboardEvent *hwKeyEvent = nil;
 
 Whenever you want to use it within React Native code now you can:
 
-`import KeyEvent from 'react-native-keyevent';`
-
 ```javascript
+  import HWKeyboardEvent from 'react-native-hw-keyboard-event';
+  
+  ...
+  
   componentDidMount() {
     HWKeyboardEvent.onHWKeyPressed(this.handleHardwareEnterPress);
   }
@@ -108,4 +110,6 @@ Whenever you want to use it within React Native code now you can:
       case 'shift-enter': this.handleInsertTextToDraft('\n');
       }
   }
+  
+  ...
 ```
