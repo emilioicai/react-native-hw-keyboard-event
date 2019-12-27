@@ -1,4 +1,4 @@
-package com.github.kevinejohn.keyevent;
+package com.github.emilioicai.hwkeyboardevent;
 
 import com.facebook.react.ReactPackage;
 import com.facebook.react.bridge.JavaScriptModule;
