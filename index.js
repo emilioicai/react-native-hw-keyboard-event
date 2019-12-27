@@ -16,7 +16,7 @@ class HWKeyboardEvent {
     }
   }
 
-  removeHWKeyPressed() {
+  removeOnHWKeyPressed() {
     if (this.listener) {
       this.listener.remove();
       this.listener = null;
