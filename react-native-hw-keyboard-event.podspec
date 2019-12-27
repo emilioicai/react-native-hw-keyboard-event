@@ -10,13 +10,13 @@ Pod::Spec.new do |s|
   s.summary      = 'Event handler for hardware keyboard keystrokes'
   s.author       = 'Emilio Rodriguez'
 
-  s.homepage     = 'https://github.com/emilioicai/react-native-hw-keybard-event'
+  s.homepage     = 'https://github.com/emilioicai/react-native-hw-keyboard-event'
 
   s.license      = 'MIT'
   s.ios.deployment_target = '7.0'
   s.tvos.deployment_target = '9.0'
 
-  s.source       = { git: 'https://github.com/emilioicai/react-native-hw-keybard-event.git', tag: s.version.to_s }
+  s.source       = { git: 'https://github.com/emilioicai/react-native-hw-keyboard-event.git', tag: s.version.to_s }
 
   s.source_files = 'ios/**/*.{h,m}'
   s.requires_arc = true
