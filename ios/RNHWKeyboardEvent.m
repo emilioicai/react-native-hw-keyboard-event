@@ -2,7 +2,7 @@
 #import <Foundation/Foundation.h>
 #import "RNHWKeyboardEvent.h"
 
-NSString* const onKeyUpEvent = @"onKeyUp";
+NSString* const onHWKeyPressedEvent = @"onHWKeyPressed";
 
 @implementation RNHWKeyboardEvent
 
@@ -33,14 +33,14 @@ RCT_EXPORT_MODULE();
 
 - (void)sendHWKeyEvent:(NSString *)keyString {
     if (self.hasListeners && self.bridge) {
-        [super sendEventWithName:onKeyUpEvent body:@{@"pressedKey": keyString}];
+        [super sendEventWithName:onHWKeyPressedEvent body:@{@"pressedKey": keyString}];
     }
 }
 
 #pragma mark - RCTEventEmitter implementation
 
 - (NSArray<NSString *> *)supportedEvents {
-    return @[onKeyUpEvent];
+    return @[onHWKeyPressedEvent];
 }
 
 // Note: startObserving will be called when this module's first listener is added.
