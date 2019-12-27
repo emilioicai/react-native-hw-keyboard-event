@@ -7,7 +7,7 @@ import {
 
 class HWKeyboardEvent {
   onHWKeyPressed(cb) {
-    this.removeHWKeyPressed();
+    this.removeOnHWKeyPressed();
     if (Platform.OS === "ios") {
       let keyEvent = new NativeEventEmitter(NativeModules.RNHWKeyboardEvent);
       this.listener = keyEvent.addListener("onHWKeyPressed", cb);
