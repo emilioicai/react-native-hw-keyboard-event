@@ -12,12 +12,8 @@ class HWKeyboardEvent {
       this.cbStack = [];
     }
     this.cbStack.push(cb);
-    if (Platform.OS === "ios") {
-      let keyEvent = new NativeEventEmitter(NativeModules.RNHWKeyboardEvent);
-      this.listener = keyEvent.addListener("onHWKeyPressed", cb);
-    } else {
-      this.listener = DeviceEventEmitter.addListener("onHWKeyPressed", cb);
-    }
+    let keyEvent = new NativeEventEmitter(NativeModules.RNHWKeyboardEvent);
+    this.listener = keyEvent.addListener("onHWKeyPressed", cb);
   }
 
   removeOnHWKeyPressed(newCbAdded) {
