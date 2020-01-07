@@ -38,7 +38,7 @@ public class HWKeyboardEventModule extends ReactContextBaseJavaModule {
         mJSModule.emit("onHWKeyPressed", params);
     };
 
-    protected HWKeyboardEventModule(ReactApplicationContext reactContext) {
+    public HWKeyboardEventModule(ReactApplicationContext reactContext) {
         super(reactContext);
         mReactContext = reactContext;
     }
